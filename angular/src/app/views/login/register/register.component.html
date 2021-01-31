@@ -1,0 +1,37 @@
+<div class="example-container">
+    <h1 style="text-transform: capitalize;">New Customer Registration</h1>
+    <div class="row">
+        <label>Name</label>
+        <span style="padding: 0 77px 0 0;">:</span>
+        <input (ngModel)="customerRequest.name" type="text" name="name" id="name" required />
+    </div>
+    <div class="row">
+        <label style="vertical-align: super;">Address</label>
+        <span style="padding: 0 64px 0 0; vertical-align: super;">:</span>
+        <textarea (ngModel)="customerRequest.address" type="text" name="address" id="address"></textarea>
+    </div>
+    <div class="row">
+        <label>City</label>
+        <span style="padding: 0 90px 0 0;">:</span>
+        <input (ngModel)="customerRequest.city" type="text" name="city" id="city" />
+    </div>
+    <div class="row">
+        <label>State</label>
+        <span style="padding: 0 83px 0 0;">:</span>
+        <input (ngModel)="customerRequest.state" type="text" name="state" id="state" />
+    </div>
+    <div class="row">
+        <label>Phone Number</label>
+        <span style="padding: 0 20px 0 0;">:</span>
+        <input (ngModel)="customerRequest.phoneno" type="text" name="phoneno" id="phoneno" required />
+    </div>
+    <div class="row">
+        <label>Email</label>
+        <span style="padding: 0 81px 0 0;">:</span>
+        <input (ngModel)="customerRequest.email" type="text" name="email" id="email" required />
+    </div>
+
+    <div style="text-align: center;">
+        <button id="register" class="mainbutton" style="width: 15%;line-height: 25px;" (click)="register()">Register</button>
+    </div>
+</div>
